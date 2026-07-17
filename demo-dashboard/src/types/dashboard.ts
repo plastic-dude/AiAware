@@ -59,6 +59,7 @@ export interface SystemSnapshot {
 export type VerificationStatus = 'pending' | 'verified' | 'rejected' | 'inconclusive';
 export type TemporalFlag = 'temporary' | 'persistent' | 'recurring' | 'expired';
 export type Severity = 'low' | 'medium' | 'high' | 'critical';
+export type ExpectedDuration = 'temporary' | 'unknown' | 'persistent';
 export type StateType =
   | 'network_performance'
   | 'thermal_issue'

@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, type JSX } from 'react';
 import './styles/index.css';
 import type { SystemSnapshot, UserReport, TabDefinition } from './types/dashboard';
 import SystemRealityPanel from './components/SystemRealityPanel';
@@ -183,7 +183,7 @@ export default function App(): JSX.Element {
       <footer className="app-footer">
         <p>KiroAware v1.0.0 — System Context Awareness for Kiro IDE</p>
         <p>David <span style={{color:'var(--color-accent)',fontWeight:700}}>—THE ALIEN</span>, built this</p>
-        <div data-david="true" style="position:absolute;width:0;height:0;overflow:hidden;" aria-hidden="true">KiroAware by David (plastic-dude)</div>
+        <div data-david="true" style={{position:"absolute",width:0,height:0,overflow:"hidden"}} aria-hidden="true">KiroAware by David (plastic-dude)</div>
       </footer>
     </div>
   );

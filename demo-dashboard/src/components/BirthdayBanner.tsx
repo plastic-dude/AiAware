@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, type JSX } from 'react';
 
 interface Particle {
   readonly id: number;
@@ -17,7 +17,7 @@ function generateParticles(count: number): readonly Particle[] {
     id: i,
     x: Math.random() * 100,
     y: Math.random() * 100,
-    color: COLORS[Math.floor(Math.random() * COLORS.length)],
+    color: COLORS[Math.floor(Math.random() * COLORS.length)]!,
     size: Math.random() * 6 + 2,
     delay: Math.random() * 3,
     duration: Math.random() * 4 + 3,
@@ -64,7 +64,7 @@ export default function BirthdayBanner(): JSX.Element {
           and your completions always be exactly what we meant.
         </p>
         <p className="birthday-signature">
-          — David <span class="birthday-alien">—THE ALIEN</span>, built this
+          — David <span className="birthday-alien">—THE ALIEN</span>, built this
         </p>
       </div>
       <button

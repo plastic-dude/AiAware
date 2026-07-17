@@ -1,5 +1,4 @@
 import type { SystemSnapshot } from '../types/dashboard';
-import { formatBytes } from '../App';
 
 interface DevicePanelProps {
   readonly snapshot: SystemSnapshot;

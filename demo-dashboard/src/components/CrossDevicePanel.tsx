@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import type { JSX } from 'react';
 
 interface DeviceProfile {
   readonly id: string;
@@ -57,7 +58,7 @@ const COMPLEXITY_COLORS: Record<string, string> = {
 };
 
 export default function CrossDevicePanel(): JSX.Element {
-  const [selectedDevice, setSelectedDevice] = useState<string>(DEVICES[0].id);
+  const [selectedDevice, setSelectedDevice] = useState<string>(DEVICES[0]!.id);
   const current = DEVICES.find((d) => d.id === selectedDevice);
 
   return (

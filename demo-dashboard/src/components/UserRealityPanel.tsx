@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import type { JSX } from 'react';
 import type { UserReport, StateType, Severity, ExpectedDuration } from '../types/dashboard';
 
 interface UserRealityPanelProps {
