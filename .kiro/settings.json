@@ -1,0 +1,34 @@
+{
+  "project": {
+    "name": "KiroAware",
+    "description": "System Context Awareness MCP Server for Kiro IDE — The Alien System",
+    "version": "1.0.0",
+    "author": "David (plastic-dude)",
+    "signature": "david-plastic-dude"
+    "license": "MIT"
+  },
+  "mcp": {
+    "server": {
+      "name": "kiroaware",
+      "entry": "mcp-server/dist/index.js",
+      "transport": "stdio",
+      "tools": [
+        "get_system_snapshot",
+        "get_cpu_status",
+        "get_memory_status",
+        "get_battery_status",
+        "get_disk_status",
+        "get_network_status",
+        "get_process_overview",
+        "get_os_info",
+        "report_system_state",
+        "verify_user_report",
+        "get_awareness_context"
+      ]
+    }
+  },
+  "build": {
+    "command": "cd mcp-server && npm run build",
+    "output": "mcp-server/dist"
+  }
+}
