@@ -30,7 +30,7 @@ export interface DiskMetrics {
 export interface NetworkInterfaceMetrics {
   readonly iface: string;
   readonly ip4: string;
-  readonly operstate: 'up' | 'down' | string;
+  readonly operstate: string;
 }
 
 export interface NetworkMetrics {

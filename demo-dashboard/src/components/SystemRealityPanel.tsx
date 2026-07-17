@@ -1,5 +1,5 @@
 import type { SystemSnapshot } from '../types/dashboard';
-import { formatBytes } from '../App';
+import { formatBytes } from '../lib/utils';
 
 interface GaugeProps {
   readonly label: string;

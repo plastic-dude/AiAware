@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import './styles/index.css';
+import { formatBytes } from './lib/utils';
 import type { SystemSnapshot, UserReport, TabDefinition } from './types/dashboard';
 import SystemRealityPanel from './components/SystemRealityPanel';
 import UserRealityPanel from './components/UserRealityPanel';
@@ -17,11 +18,6 @@ const TABS: readonly TabDefinition[] = [
   { id: 'cross', label: 'Cross-Device', icon: '⇄' },
   { id: 'awareness', label: "Kiro's Awareness", icon: '◐' },
 ] as const;
-
-function formatBytes(bytes: number): string {
-  const gb = bytes / 1024 / 1024 / 1024;
-  return `${gb.toFixed(1)} GB`;
-}
 
 function createMockSnapshot(): SystemSnapshot {
   return {
@@ -189,4 +185,3 @@ export default function App(): React.JSX.Element {
   );
 }
 
-export { formatBytes };
