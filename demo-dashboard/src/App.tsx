@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback, type JSX } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import './styles/index.css';
 import type { SystemSnapshot, UserReport, TabDefinition } from './types/dashboard';
 import SystemRealityPanel from './components/SystemRealityPanel';

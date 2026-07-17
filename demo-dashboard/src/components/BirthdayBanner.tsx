@@ -1,4 +1,4 @@
-import { useState, useEffect, type JSX } from 'react';
+import { useState, useEffect } from 'react';
 
 interface Particle {
   readonly id: number;
