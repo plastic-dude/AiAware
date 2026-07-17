@@ -4,7 +4,7 @@ interface VerificationPanelProps {
   readonly reports: readonly UserReport[];
 }
 
-export default function VerificationPanel({ reports }: VerificationPanelProps): JSX.Element {
+export default function VerificationPanel({ reports }: VerificationPanelProps): React.JSX.Element {
   const verified = reports.filter((r) => r.verification.status === 'verified');
   const inconclusive = reports.filter((r) => r.verification.status === 'inconclusive');
   const rejected = reports.filter((r) => r.verification.status === 'rejected');

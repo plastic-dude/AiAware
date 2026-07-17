@@ -7,7 +7,7 @@ interface GaugeProps {
   readonly color: string;
 }
 
-function Gauge({ label, value, color }: GaugeProps): JSX.Element {
+function Gauge({ label, value, color }: GaugeProps): React.JSX.Element {
   const pct = Math.min(100, value);
   return (
     <div className="gauge">
@@ -29,7 +29,7 @@ interface SystemRealityPanelProps {
   readonly snapshot: SystemSnapshot;
 }
 
-export default function SystemRealityPanel({ snapshot }: SystemRealityPanelProps): JSX.Element {
+export default function SystemRealityPanel({ snapshot }: SystemRealityPanelProps): React.JSX.Element {
   return (
     <div className="panel">
       <h2>◈ System Reality</h2>

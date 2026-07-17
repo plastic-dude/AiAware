@@ -106,7 +106,7 @@ function createMockReports(): readonly UserReport[] {
   ] as const;
 }
 
-export default function App(): JSX.Element {
+export default function App(): React.JSX.Element {
   const [activeTab, setActiveTab] = useState<string>('reality');
   const [snapshot, setSnapshot] = useState<SystemSnapshot | null>(null);
   const [reports, setReports] = useState<readonly UserReport[]>([]);

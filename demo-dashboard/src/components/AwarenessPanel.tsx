@@ -79,7 +79,7 @@ function buildAdaptations(snapshot: SystemSnapshot, reports: readonly UserReport
   return adaptations;
 }
 
-export default function AwarenessPanel({ snapshot, reports }: AwarenessPanelProps): JSX.Element {
+export default function AwarenessPanel({ snapshot, reports }: AwarenessPanelProps): React.JSX.Element {
   const adaptations = buildAdaptations(snapshot, reports);
   const activeReports = reports.filter((r) => r.verification.status === 'verified');
 

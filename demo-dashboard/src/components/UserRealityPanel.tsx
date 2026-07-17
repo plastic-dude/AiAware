@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import type { JSX } from 'react';
 import type { UserReport, StateType, Severity, ExpectedDuration } from '../types/dashboard';
 
 interface UserRealityPanelProps {
@@ -33,7 +32,7 @@ const DURATIONS: readonly { readonly value: ExpectedDuration; readonly label: st
   { value: 'persistent', label: 'Persistent' },
 ] as const;
 
-export default function UserRealityPanel({ reports }: UserRealityPanelProps): JSX.Element {
+export default function UserRealityPanel({ reports }: UserRealityPanelProps): React.JSX.Element {
   const [stateType, setStateType] = useState<StateType>('network_performance');
   const [description, setDescription] = useState<string>('');
   const [severity, setSeverity] = useState<Severity>('medium');

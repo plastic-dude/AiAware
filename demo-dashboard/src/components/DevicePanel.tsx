@@ -9,7 +9,7 @@ interface PatternItemProps {
   readonly value: string;
 }
 
-function PatternItem({ label, value }: PatternItemProps): JSX.Element {
+function PatternItem({ label, value }: PatternItemProps): React.JSX.Element {
   return (
     <div className="pattern-item">
       <span className="pattern-value">{value}</span>
@@ -18,7 +18,7 @@ function PatternItem({ label, value }: PatternItemProps): JSX.Element {
   );
 }
 
-export default function DevicePanel({ snapshot }: DevicePanelProps): JSX.Element {
+export default function DevicePanel({ snapshot }: DevicePanelProps): React.JSX.Element {
   const ramGB = Math.round(snapshot.memory.totalBytes / 1024 / 1024 / 1024);
   const hasSSD = snapshot.disk.some((d) => d.mount === '/');
 

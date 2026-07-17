@@ -24,7 +24,7 @@ function generateParticles(count: number): readonly Particle[] {
   }));
 }
 
-export default function BirthdayBanner(): JSX.Element {
+export default function BirthdayBanner(): React.JSX.Element {
   const [particles] = useState<readonly Particle[]>(() => generateParticles(30));
   const [visible, setVisible] = useState(true);
 
