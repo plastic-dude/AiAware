@@ -35,7 +35,7 @@ export default function SystemRealityPanel({ snapshot }: SystemRealityPanelProps
       <h2>◈ System Reality</h2>
       <p className="panel-desc">
         Ground truth data from systeminformation. No user input. Pure objective measurement
-        of what Kiro can auto-detect about your machine.
+        of what AI can auto-detect about your machine.
       </p>
 
       <div className="grid-4">
