@@ -64,7 +64,7 @@ export default function BirthdayBanner(): React.JSX.Element {
           and your completions always be exactly what we meant.
         </p>
         <p className="birthday-signature">
-          — MOKDAVONY <span className="birthday-alien">—THE ALIEN</span>, built this
+          — The Architect <span className="birthday-alien">—THE ALIEN</span>, built this
         </p>
       </div>
       <button
