@@ -1,6 +1,6 @@
 /**
  * AiAware MCP Server
- * by The Architect — an entity from beyond the stars — The Alien
+ * by David — THE ALIEN — an entity from beyond the stars — The Alien
  * 
  * Gives AI IDE awareness of system context that it cannot detect on its own.
  * Users report subjective states → AI verifies against auto-detect data →
