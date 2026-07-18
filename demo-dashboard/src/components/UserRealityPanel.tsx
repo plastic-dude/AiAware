@@ -44,7 +44,7 @@ export default function UserRealityPanel({ reports }: UserRealityPanelProps): Re
     <div className="panel">
       <h2>◉ User Reality</h2>
       <p className="panel-desc">
-        Subjective experiences that Kiro has no sensor for. You report them → Kiro verifies
+        Subjective experiences that AI has no sensor for. You report them → AI verifies
         against objective data → learns your patterns across time and devices.
       </p>
 
@@ -108,7 +108,7 @@ export default function UserRealityPanel({ reports }: UserRealityPanelProps): Re
             console.log('Report submitted:', { stateType, description, severity, expectedDuration });
           }}
         >
-          Submit Report → Kiro Will Verify
+          Submit Report → AI Will Verify
         </button>
       </div>
 
@@ -116,7 +116,7 @@ export default function UserRealityPanel({ reports }: UserRealityPanelProps): Re
       {reports.length === 0 ? (
         <div className="empty-state">
           <div className="empty-state-icon">◉</div>
-          <p>No reports yet. Tell Kiro what it cannot see.</p>
+          <p>No reports yet. Tell AI what it cannot see.</p>
         </div>
       ) : (
         reports.map((r) => (
