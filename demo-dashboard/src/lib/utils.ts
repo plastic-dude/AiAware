@@ -1,5 +1,5 @@
 /**
- * KiroAware Dashboard — Utility Functions
+ * AiAware Dashboard — Utility Functions
  */
 
 export function formatBytes(bytes: number): string {
