@@ -1,7 +1,7 @@
 {
   "name": "aiaware-mcp-server",
   "version": "1.0.0",
-  "description": "AiAware — System Context Awareness MCP Server for AI IDE. An alien observation protocol by MOKDAVONY",
+  "description": "AiAware — System Context Awareness MCP Server for AI IDE. An alien observation protocol by The Architect",
   "type": "commonjs",
   "main": "dist/bridge.js",
   "bin": "dist/bridge.js",
