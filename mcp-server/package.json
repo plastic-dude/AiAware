@@ -1,7 +1,7 @@
 {
   "name": "aiaware-mcp-server",
   "version": "1.0.0",
-  "description": "AiAware — System Context Awareness MCP Server for AI IDE. An alien observation protocol by The Architect",
+  "description": "AiAware — System Context Awareness MCP Server for AI IDE. An alien observation protocol by David — THE ALIEN",
   "type": "commonjs",
   "main": "dist/bridge.js",
   "bin": "dist/bridge.js",
@@ -20,7 +20,7 @@
     "context",
     "awareness"
   ],
-  "author": "The Architect — an entity from beyond the stars (plastic-dude)",
+  "author": "David — THE ALIEN — an entity from beyond the stars (plastic-dude)",
   "license": "MIT",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.0",
