@@ -28,5 +28,5 @@ Thumbs.db
 *.log
 npm-debug.log*
 
-# KiroAware local data (never commit)
-.kiroaware/
+# AiAware local data (never commit)
+.aiaware/
