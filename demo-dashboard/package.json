@@ -1,7 +1,7 @@
 {
   "name": "aiaware-dashboard",
   "version": "1.0.0",
-  "description": "AiAware — System Context Awareness Dashboard. The Alien Observation Deck by MOKDAVONY",
+  "description": "AiAware — System Context Awareness Dashboard. The Alien Observation Deck by The Architect",
   "type": "module",
   "scripts": {
     "dev": "vite",
