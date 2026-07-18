@@ -1,6 +1,6 @@
 /**
- * KiroAware — Type Definitions
- * The Alien System by David (plastic-dude)
+ * AiAware — Type Definitions
+ * The Alien Observation Protocol by MOKDAVONY — The Alien God
  */
 
 // ───────────────────────────────────────────
@@ -274,7 +274,7 @@ export interface TelemetryEntry {
   requestPayloadSize: number;
   responsePayloadSize: number;
   roundTripMs: number;
-  kiroBehavior: {
+  aiBehavior: {
     didRetry: boolean;
     retryCount: number;
     timeoutOccurred: boolean;
