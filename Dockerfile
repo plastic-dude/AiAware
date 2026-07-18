@@ -1,3 +1,8 @@
+# ═══════════════════════════════════════════
+# AiAware — The Alien Observation Protocol
+# Dockerfile by MOKDAVONY — The Alien God
+# ═══════════════════════════════════════════
+
 # Build stage for Dashboard
 FROM node:22-slim AS dashboard-build
 WORKDIR /app/dashboard
