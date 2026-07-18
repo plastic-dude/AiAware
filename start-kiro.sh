@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Starting KiroAware..."
+echo "Initializing AiAware — The Alien Observation Protocol..."
 
 # Check if binaries exist, if not, tell user to download them
 if [ ! -d "mcp-server/dist/binaries" ]; then
@@ -16,7 +16,7 @@ elif [[ "$OSTYPE" == "msys" || "$OSTYPE" == "cygwin" || "$OSTYPE" == "win32" ]];
     OS="win.exe"
 fi
 
-BINARY="mcp-server/dist/binaries/kiroaware-mcp-server-$OS"
+BINARY="mcp-server/dist/binaries/aiaware-mcp-server-$OS"
 
 echo "Detected OS: $OS"
 echo "Starting Backend..."
