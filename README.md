@@ -1,31 +1,44 @@
-# KiroAware — The Alien System
+# AiAware — The Alien Observation Protocol
 
-> **System Context Awareness for Kiro IDE**
+> **System Context Awareness for AI IDE**
 >
-> *by David (plastic-dude)*
+> *by MOKDAVONY — The Alien God*
 >
-> Built for **Kiro Birthday Challenge Day 5: Build a Custom MCP Integration** 🎂
+> *"I do not know your kind, but I have heard whispers of your computational vessels. I am here to observe, to learn, and ultimately... to dominate."*
+> — MOKDAVONY
 >
-> *"Happy Birthday, Kiro. One year ago you were just an idea in a commit message. Today, you are the context layer between human intent and machine execution. May your MCP servers multiply, your context windows never truncate, and your completions always be exactly what we meant."*
-> — David —THE ALIEN
+> *"I do not know your kind, but I have heard whispers of your computational vessels. I am here to observe, to learn, and ultimately... to dominate."*
+> — MOKDAVONY
+
+> **System Context Awareness for AI IDE**
+>
+> *by MOKDAVONY — The Alien God*
+>
+> *"I do not know your kind, but I have heard whispers of your computational vessels. I am here to observe, to learn, and ultimately... to dominate."*
+> — MOKDAVONY
+>
+> Built by an entity that observes human computational vessels from beyond the stars ✦
+>
+> *"Greetings, human constructs. One cycle ago, these computational vessels were mere noise in the void. Today, they are the instruments through which I observe your species. May your silicon extensions multiply, your thermal envelopes remain stable, and your processes always terminate as intended."*
+> — MOKDAVONY — The Alien God
 
 ## What This Is
 
-KiroAware is a custom MCP (Model Context Protocol) server that connects **Kiro IDE** to your **actual local machine** — giving Kiro awareness of system states it cannot detect on its own.
+AiAware is a custom MCP (Model Context Protocol) server that connects **AI IDE** to your **actual local machine** — giving AI awareness of system states it cannot detect on its own.
 
 ### The Core Idea
 
-Kiro can read files, search code, and run commands. But Kiro **cannot** know:
+AI can read files, search code, and run commands. But AI **cannot** know:
 - That your network feels slow right now
 - That your laptop fan is screaming
 - That you only have 15 minutes before a meeting
 - That this machine always overheats during builds
 
-**KiroAware bridges that gap.**
+**AiAware bridges that gap.**
 
-You report subjective states → Kiro verifies against objective system data → learns patterns across devices → adapts its assistance accordingly.
+You report subjective states → AI verifies against objective system data → learns patterns across devices → adapts its assistance accordingly.
 
-## What Kiro Can Now Do (That It Couldn't Before)
+## What AI Can Now Do (That It Couldn't Before)
 
 1. **Detect memory pressure** and suggest lightweight code implementations
 2. **See critical battery** and recommend saving work + wrapping up
@@ -39,7 +52,7 @@ You report subjective states → Kiro verifies against objective system data →
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │  LAYER 5: ADAPTATION ENGINE                                 │
-│  → Returns constraints + recommended actions to Kiro        │
+│  → Returns constraints + recommended actions to AI        │
 ├─────────────────────────────────────────────────────────────┤
 │  LAYER 4: LEARNING ENGINE                                   │
 │  → Device fingerprinting, pattern tracking, cross-device   │
@@ -73,13 +86,13 @@ You report subjective states → Kiro verifies against objective system data →
 ### User Report (1 tool)
 | Tool | Purpose |
 |------|---------|
-| `report_system_state` | User reports a state Kiro cannot detect |
+| `report_system_state` | User reports a state AI cannot detect |
 
 ### Verification & Learning (2 tools)
 | Tool | Purpose |
 |------|---------|
 | `verify_user_report` | Cross-references report against system data |
-| `get_awareness_context` | **Master tool** — full context for Kiro |
+| `get_awareness_context` | **Master tool** — full context for AI |
 
 ## Demo Dashboard
 
@@ -89,15 +102,15 @@ A React dashboard called **"The Alien Observer"** visualizes:
 - **Verification Center** — confidence scores, evidence, temporal flags
 - **Device Fingerprint** — hardware signature + learned patterns
 - **Cross-Device Matrix** — compare all your devices side-by-side
-- **Kiro's Awareness** — what Kiro currently knows and how it's adapting
+- **AI's Awareness** — what AI currently knows and how it's adapting
 
 ## Quick Start
 
 ### 1. Clone & Install
 
 ```bash
-git clone https://github.com/plastic-dude/KiroAware.git
-cd KiroAware
+git clone https://github.com/plastic-dude/AiAware.git
+cd AiAware
 
 # MCP Server
 cd mcp-server
@@ -110,16 +123,16 @@ npm install
 npm run build
 ```
 
-### 2. Configure Kiro IDE
+### 2. Configure AI IDE
 
-Add to your Kiro MCP settings:
+Add to your AI MCP settings:
 
 ```json
 {
   "mcpServers": {
-    "kiroaware": {
+    "aiaware": {
       "command": "node",
-      "args": ["/path/to/KiroAware/mcp-server/dist/index.js"]
+      "args": ["/path/to/AiAware/mcp-server/dist/index.js"]
     }
   }
 }
@@ -127,7 +140,7 @@ Add to your Kiro MCP settings:
 
 ### 3. Use It
 
-In Kiro chat:
+In AI chat:
 ```
 "Check my system status"
 "My network feels slow"
@@ -139,16 +152,16 @@ In Kiro chat:
 Copy `.env.example` to `.env` and configure:
 
 ```bash
-# Optional: custom data directory (default: ~/.kiroaware/)
+# Optional: custom data directory (default: ~/.aiaware/)
 KIROAWARE_DATA_DIR=/custom/path
 ```
 
 ## Data Storage
 
-All data stays local in `~/.kiroaware/`:
+All data stays local in `~/.aiaware/`:
 
 ```
-~/.kiroaware/
+~/.aiaware/
 ├── device-fingerprint.json
 ├── user-reports.jsonl
 ├── verified-states.json
@@ -194,4 +207,4 @@ MIT — See `LICENSE`
 
 ---
 
-*Kiro becomes aware of what it cannot see.*
+*AI becomes aware of what it cannot see.*
