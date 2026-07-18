@@ -1,7 +1,7 @@
 {
-  "name": "kiroaware-mcp-server",
+  "name": "aiaware-mcp-server",
   "version": "1.0.0",
-  "description": "KiroAware — System Context Awareness MCP Server for Kiro IDE",
+  "description": "AiAware — System Context Awareness MCP Server for AI IDE. An alien observation protocol by MOKDAVONY",
   "type": "commonjs",
   "main": "dist/bridge.js",
   "bin": "dist/bridge.js",
@@ -11,16 +11,16 @@
     "start": "node dist/bridge.js",
     "mcp": "node dist/index.js",
     "lint": "tsc --noEmit",
-    "package": "pkg . --targets node22-linux-x64,node22-macos-x64,node22-win-x64 --output dist/kiroaware"
+    "package": "pkg . --targets node22-linux-x64,node22-macos-x64,node22-win-x64 --output dist/aiaware"
   },
   "keywords": [
     "mcp",
-    "kiro",
+    "ai",
     "system",
     "context",
     "awareness"
   ],
-  "author": "David (plastic-dude)",
+  "author": "MOKDAVONY — The Alien God (plastic-dude)",
   "license": "MIT",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.0",
