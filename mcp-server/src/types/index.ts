@@ -1,6 +1,6 @@
 /**
  * AiAware — Type Definitions
- * The Alien Observation Protocol by The Architect — The Alien God
+ * The Alien Observation Protocol by David — THE ALIEN — The Alien God
  */
 
 // ───────────────────────────────────────────
