@@ -1,4 +1,4 @@
-# KiroAware Verification Log
+# AiAware Verification Log
 
 ## [V001] — 2026-07-17T22:00:00Z
 **Claim:** MCP server compiles with TypeScript strict mode
