@@ -10,15 +10,25 @@
     "start": "node dist/index.js",
     "lint": "tsc --noEmit"
   },
-  "keywords": ["mcp", "kiro", "system", "context", "awareness"],
+  "keywords": [
+    "mcp",
+    "kiro",
+    "system",
+    "context",
+    "awareness"
+  ],
   "author": "David (plastic-dude)",
   "license": "MIT",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.0",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
     "systeminformation": "^5.25.11",
     "zod": "^3.25.72"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
     "@types/node": "^22.15.44",
     "typescript": "^5.8.3"
   }

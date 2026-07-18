@@ -108,19 +108,82 @@ export default function App(): React.JSX.Element {
   const [reports, setReports] = useState<readonly UserReport[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
-  const loadData = useCallback(() => {
-    // Simulate async data fetch from MCP server
-    const timer = setTimeout(() => {
+  const loadData = useCallback(async () => {
+    try {
+      const [snapshotRes, reportsRes] = await Promise.all([
+        fetch('http://localhost:3001/api/snapshot'),
+        fetch('http://localhost:3001/api/reports')
+      ]);
+      
+      const snapshotData = await snapshotRes.json();
+      const reportsData = await reportsRes.json();
+
+      // Map server types to dashboard types
+      const mappedSnapshot: SystemSnapshot = {
+        timestamp: snapshotData.timestamp,
+        cpu: {
+          brand: snapshotData.cpu.brand,
+          cores: snapshotData.cpu.cores,
+          loadPercent: snapshotData.cpu.loadPercent,
+          temperature: snapshotData.cpu.temperature,
+        },
+        memory: {
+          totalBytes: snapshotData.memory.total,
+          usedBytes: snapshotData.memory.used,
+          usedPercent: snapshotData.memory.usedPercent,
+        },
+        battery: snapshotData.battery ? {
+          hasBattery: snapshotData.battery.hasBattery,
+          percent: snapshotData.battery.percent,
+          isCharging: snapshotData.battery.isCharging,
+        } : null,
+        disk: snapshotData.disk.map((d: any) => ({
+          mount: d.mount,
+          usePercent: d.usePercent,
+        })),
+        network: {
+          interfaces: snapshotData.network.interfaces.map((ni: any) => ({
+            iface: ni.iface,
+            ip4: ni.ip4,
+            operstate: ni.operstate,
+          })),
+          rxSec: snapshotData.network.stats?.rx_sec ?? 0,
+          txSec: snapshotData.network.stats?.tx_sec ?? 0,
+        },
+        os: {
+          platform: snapshotData.os.platform,
+          distro: snapshotData.os.distro,
+          arch: snapshotData.os.arch,
+          hostname: snapshotData.os.hostname,
+        },
+      };
+
+      const mappedReports: UserReport[] = reportsData.map((r: any) => ({
+        reportId: r.reportId,
+        timestamp: r.timestamp,
+        stateType: r.stateType,
+        description: r.userDescription || r.description,
+        severity: r.severity,
+        verification: r.verification,
+        temporal: r.temporal,
+      }));
+
+      setSnapshot(mappedSnapshot);
+      setReports(mappedReports);
+      setIsLoading(false);
+    } catch (error) {
+      console.error('Failed to fetch live data:', error);
+      // Fallback to mock on error
       setSnapshot(createMockSnapshot());
       setReports(createMockReports());
       setIsLoading(false);
-    }, 800);
-    return () => clearTimeout(timer);
+    }
   }, []);
 
   useEffect(() => {
-    const cleanup = loadData();
-    return cleanup;
+    loadData();
+    const interval = setInterval(loadData, 5000); // Poll every 5s
+    return () => clearInterval(interval);
   }, [loadData]);
 
   if (isLoading || snapshot === null) {
