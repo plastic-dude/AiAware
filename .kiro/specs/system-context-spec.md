@@ -1,7 +1,7 @@
-# KiroAware System Context Specification
+# AiAware System Context Specification
 
 ## Purpose
-Define how KiroAware captures, verifies, and surfaces system context to Kiro IDE.
+Define how AiAware captures, verifies, and surfaces system context to AI IDE.
 
 ## Architecture Layers
 
@@ -12,8 +12,8 @@ Define how KiroAware captures, verifies, and surfaces system context to Kiro IDE
 - Trust: Absolute — direct hardware measurement
 
 ### Layer 2: User Report (Subjective)
-- Source: User input via Kiro chat
-- Data: States Kiro cannot detect (network feels slow, fan loud, limited time)
+- Source: User input via AI chat
+- Data: States AI cannot detect (network feels slow, fan loud, limited time)
 - Frequency: User-initiated
 - Trust: Requires verification
 
@@ -31,11 +31,11 @@ Define how KiroAware captures, verifies, and surfaces system context to Kiro IDE
 
 ### Layer 5: Adaptation Engine
 - Returns constraints + recommended actions
-- Kiro adapts: code complexity, suggestion verbosity, break reminders
+- AI adapts: code complexity, suggestion verbosity, break reminders
 - Cross-device awareness: "You're on your laptop — keeping it light"
 
 ## Data Storage
-All data stored in `~/.kiroaware/` — local only, no cloud, no external APIs.
+All data stored in `~/.aiaware/` — local only, no cloud, no external APIs.
 
 ## Privacy
 - No data leaves the local machine
