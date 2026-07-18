@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import './styles/index.css';
-import { formatBytes } from './lib/utils';
+// import { formatBytes } from './lib/utils';
 import type { SystemSnapshot, UserReport, TabDefinition } from './types/dashboard';
 import SystemRealityPanel from './components/SystemRealityPanel';
 import UserRealityPanel from './components/UserRealityPanel';
