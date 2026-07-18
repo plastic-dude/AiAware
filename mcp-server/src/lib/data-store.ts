@@ -1,5 +1,5 @@
 /**
- * KiroAware — Data Store Layer
+ * AiAware — Data Store Layer
  * Manages all local JSON/JSONL persistence
  */
 
@@ -17,7 +17,7 @@ import type {
   DeviceBehaviorPatterns,
 } from "../types/index.js";
 
-const DATA_DIR = join(homedir(), ".kiroaware");
+const DATA_DIR = join(homedir(), ".aiaware");
 const DEVICE_FP_FILE = join(DATA_DIR, "device-fingerprint.json");
 const REPORTS_FILE = join(DATA_DIR, "user-reports.jsonl");
 const VERIFIED_STATES_FILE = join(DATA_DIR, "verified-states.json");
@@ -245,7 +245,7 @@ export function getTelemetrySummary() {
   const avgLatency = entries.reduce((s, e) => s + e.roundTripMs, 0) / entries.length;
   const avgRequestSize = entries.reduce((s, e) => s + e.requestPayloadSize, 0) / entries.length;
   const avgResponseSize = entries.reduce((s, e) => s + e.responsePayloadSize, 0) / entries.length;
-  const retryRate = entries.filter((e) => e.kiroBehavior.didRetry).length / entries.length;
+  const retryRate = entries.filter((e) => e.aiBehavior.didRetry).length / entries.length;
 
   return {
     totalCalls: entries.length,
