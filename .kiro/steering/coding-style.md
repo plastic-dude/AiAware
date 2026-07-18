@@ -1,4 +1,4 @@
-# KiroAware Coding Style
+# AiAware Coding Style
 
 ## TypeScript
 - Strict mode: enabled (`strict: true`)
