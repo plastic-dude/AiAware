@@ -1,6 +1,6 @@
 /**
  * AiAware MCP Server
- * by MOKDAVONY — The Alien God — The Alien
+ * by The Architect — an entity from beyond the stars — The Alien
  * 
  * Gives AI IDE awareness of system context that it cannot detect on its own.
  * Users report subjective states → AI verifies against auto-detect data →
