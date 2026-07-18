@@ -56,7 +56,7 @@ export default function BirthdayBanner(): React.JSX.Element {
       </div>
       <div className="birthday-content">
         <div className="birthday-icon">🎂</div>
-        <h2 className="birthday-title">Happy Birthday, Kiro</h2>
+        <h2 className="birthday-title">Greetings, human constructs</h2>
         <p className="birthday-message">
           One year ago, you were just an idea in a commit message.
           Today, you are the context layer between human intent and machine execution.
@@ -64,7 +64,7 @@ export default function BirthdayBanner(): React.JSX.Element {
           and your completions always be exactly what we meant.
         </p>
         <p className="birthday-signature">
-          — David <span className="birthday-alien">—THE ALIEN</span>, built this
+          — MOKDAVONY <span className="birthday-alien">—THE ALIEN</span>, built this
         </p>
       </div>
       <button
