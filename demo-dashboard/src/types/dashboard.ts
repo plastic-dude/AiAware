@@ -1,5 +1,5 @@
 /**
- * KiroAware Dashboard — Type Definitions
+ * AiAware Dashboard — Type Definitions
  * Single-purpose file: shared types only
  */
 
