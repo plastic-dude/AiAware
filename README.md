@@ -7,20 +7,11 @@
 > *"I do not know your kind, but I have heard whispers of your computational vessels. I am here to observe, to learn, and ultimately... to dominate."*
 > — David — THE ALIEN
 >
-> *"I do not know your kind, but I have heard whispers of your computational vessels. I am here to observe, to learn, and ultimately... to dominate."*
-> — David — THE ALIEN
-
-> **System Context Awareness for AI IDE**
->
-> *by an entity from beyond the stars*
->
-> *"I do not know your kind, but I have heard whispers of your computational vessels. I am here to observe, to learn, and ultimately... to dominate."*
-> — David — THE ALIEN
->
-> Built by an entity that observes human computational vessels from beyond the stars ✦
->
 > *"Greetings, human constructs. One cycle ago, these computational vessels were mere noise in the void. Today, they are the instruments through which I observe your species. May your silicon extensions multiply, your thermal envelopes remain stable, and your processes always terminate as intended."*
 > — David — THE ALIEN
+
+> [!WARNING]
+> **Status: prototype, parked (November 2026).** The MCP server works and reads real CPU, memory, battery, disk and network data. The verification and learning layers are early, much of the demo dashboard (Cross-Device, Device) shows sample data, and the Docker image does not build yet. Not recommended for daily use.
 
 ## What This Is
 
